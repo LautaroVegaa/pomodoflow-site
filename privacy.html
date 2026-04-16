@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Pomodo Flow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #050B18;
+      color: #E7ECF5;
+      line-height: 1.7;
+    }
+
+    .wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    nav {
+      padding: 28px 0 0;
+      margin-bottom: 60px;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .nav-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .nav-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #E7ECF5;
+    }
+
+    .nav-back {
+      margin-left: auto;
+      font-size: 13px;
+      color: #4D78FF;
+      text-decoration: none;
+    }
+
+    .nav-back:hover { text-decoration: underline; }
+
+    header {
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      margin-bottom: 8px;
+    }
+
+    header p { font-size: 14px; color: #9AA3B9; }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #E7ECF5;
+      margin: 36px 0 10px;
+    }
+
+    p, li { font-size: 15px; color: #C8D0E0; }
+
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+
+    a { color: #4D78FF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .intro {
+      font-size: 16px;
+      color: #B0BAD0;
+      line-height: 1.7;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <nav>
+      <div class="nav-inner">
+        <div class="nav-badge"><img src="app_icon.png" alt="Pomodo Flow" /></div>
+        <span class="nav-name">Pomodo Flow</span>
+        <a href="index.html" class="nav-back">← Back</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: March 22, 2026</p>
+    </header>
+
+    <p class="intro">
+      Pomodo Flow is a productivity app built for focused work.
+      This Privacy Policy explains what data we collect, why we collect it, and how we handle it.
+      We keep it minimal and never sell your data.
+    </p>
+
+    <h2>1. Data We Collect</h2>
+
+    <p><strong>Account information</strong></p>
+    <p>When you sign in with Google or Apple, we receive your email address and display name to create and identify your account. Authentication is handled entirely by Firebase Auth — we do not store your password.</p>
+
+    <p style="margin-top:16px"><strong>Onboarding profile data</strong></p>
+    <p>During onboarding you may optionally provide your name, age range, gender, productivity goals, typical work schedule, and similar self-reported information. This data is used to personalise your experience and, with your consent, stored in your analytics profile to help us improve the app. All onboarding fields are voluntary.</p>
+
+    <p style="margin-top:16px"><strong>Session & usage data</strong></p>
+    <p>With your explicit consent (requested during onboarding), we collect anonymous analytics events to understand how the app is used — e.g. Pomodoro sessions started, settings changed, onboarding steps completed. This data is tied to your account or a random anonymous ID if you are not signed in. You can withdraw consent at any time from <strong>Settings → Privacy</strong>. No browsing history or contacts are ever collected.</p>
+
+    <p style="margin-top:16px"><strong>Crash reports</strong></p>
+    <p>With your explicit consent, if the app crashes we receive a report including device model, OS version, app version, and the error stack trace. Used exclusively to fix bugs. Powered by Firebase Crashlytics, active only in production builds and only after consent is granted.</p>
+
+    <p style="margin-top:16px"><strong>Purchase data</strong></p>
+    <p>Subscriptions are processed by Apple's App Store. We use RevenueCat to verify subscription status — it receives a purchase token from Apple, never your payment details. Purchase verification is required for app functionality and is not gated behind analytics consent.</p>
+
+    <p style="margin-top:16px"><strong>App blocking selections</strong></p>
+    <p>When you choose which apps to block during focus sessions, those selections are managed entirely on your device via Apple's Screen Time API (Family Controls). We do not transmit this list to our servers — it never leaves your device.</p>
+
+    <h2>2. Data We Do NOT Collect</h2>
+    <ul>
+      <li>Your location</li>
+      <li>Your contacts or calendar</li>
+      <li>Your microphone, camera, or photos</li>
+      <li>Your browsing history</li>
+      <li>Any data from apps you block</li>
+    </ul>
+
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>To provide and maintain the app</li>
+      <li>To sync your sessions and settings across devices</li>
+      <li>To verify your subscription status</li>
+      <li>To identify and fix crashes</li>
+      <li>To improve features based on aggregate usage patterns</li>
+    </ul>
+    <p style="margin-top:12px">We do not use your data for advertising or sell it to third parties.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <ul>
+      <li>
+        <strong>Firebase (Google)</strong> — authentication, crash reporting<br/>
+        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>
+      </li>
+      <li style="margin-top:10px">
+        <strong>RevenueCat</strong> — subscription management<br/>
+        <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>
+      </li>
+      <li style="margin-top:10px">
+        <strong>PostHog</strong> — analytics event storage<br/>
+        <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a>
+      </li>
+      <li style="margin-top:10px">
+        <strong>Apple</strong> — in-app purchases, Sign in with Apple, Screen Time API<br/>
+        <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a>
+      </li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>Analytics events and your profile are retained while your account is active. Crash reports are automatically deleted by Firebase after 90 days. PostHog analytics data is retained for 1 year by default. If you delete your account, your data is removed within 30 days.</p>
+
+    <h2>6. Analytics Consent</h2>
+    <p>Analytics and crash reporting are <strong>opt-in</strong>. We ask for your consent during onboarding before collecting any analytics or crash data. You can change your choice at any time:</p>
+    <ul>
+      <li>Open <strong>Settings → Privacy</strong> inside the app</li>
+      <li>Toggle analytics on or off — the change takes effect immediately</li>
+      <li>Revoking consent stops all future data collection; it does not delete previously collected data (see Section 5)</li>
+    </ul>
+    <p style="margin-top:12px">Essential app functionality (authentication, purchase verification) is not affected by your analytics consent choice.</p>
+
+    <h2>7. Your Rights</h2>
+    <ul>
+      <li>Withdraw analytics consent at any time from <strong>Settings → Privacy</strong></li>
+      <li>Delete your account at any time from <strong>Settings → Account → Delete account</strong></li>
+      <li>Sign out to stop associating new events with your account</li>
+      <li>Request a copy or deletion of your data by contacting us</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>Pomodo Flow is not directed at children under 13. We do not knowingly collect personal information from children. Contact us if you believe a child has provided us with data and we will delete it.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy as the app evolves. The "Last updated" date at the top reflects the current version.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions or data requests: <a href="mailto:support@pomodoflow.site">support@pomodoflow.site</a></p>
+
+    <footer>
+      &copy; 2026 Pomodo Flow. All rights reserved.
+    </footer>
+
+  </div>
+</body>
+</html>
