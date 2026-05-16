@@ -122,7 +122,7 @@
 
     <header>
       <h1>Privacy Policy</h1>
-      <p>Last updated: March 22, 2026</p>
+      <p>Last updated: May 16, 2026</p>
     </header>
 
     <p class="intro">
@@ -151,11 +151,15 @@
     <p style="margin-top:16px"><strong>App blocking selections</strong></p>
     <p>When you choose which apps to block during focus sessions, those selections are managed entirely on your device via Apple's Screen Time API (Family Controls). We do not transmit this list to our servers — it never leaves your device.</p>
 
+    <p style="margin-top:16px"><strong>Prove It camera verification</strong></p>
+    <p>The Prove It feature is optional and only activates when you choose to use it. When activated, the device camera captures a single photo that is securely transmitted to our backend on Firebase Cloud Functions and then passed to Anthropic's Claude API for content classification (notebook, textbook, printed notes, work on screen, or none). The photo is processed in real time and is not stored on our servers after the classification response is returned. Only the verification result (valid/invalid plus the content label) is retained, linked to your account, and used to unlock your blocked apps within the focus session. You can choose not to use Prove It at any time; the rest of the app works without it.</p>
+
     <h2>2. Data We Do NOT Collect</h2>
     <ul>
       <li>Your location</li>
       <li>Your contacts or calendar</li>
-      <li>Your microphone, camera, or photos</li>
+      <li>Your microphone or audio</li>
+      <li>Your photo library (only camera photos you actively capture for Prove It, see above)</li>
       <li>Your browsing history</li>
       <li>Any data from apps you block</li>
     </ul>
@@ -185,13 +189,17 @@
         <a href="https://posthog.com/privacy" target="_blank">posthog.com/privacy</a>
       </li>
       <li style="margin-top:10px">
+        <strong>Anthropic</strong> — Claude AI used to classify Prove It camera photos (real-time inference, image not used for model training)<br/>
+        <a href="https://www.anthropic.com/legal/privacy" target="_blank">anthropic.com/legal/privacy</a>
+      </li>
+      <li style="margin-top:10px">
         <strong>Apple</strong> — in-app purchases, Sign in with Apple, Screen Time API<br/>
         <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a>
       </li>
     </ul>
 
     <h2>5. Data Retention</h2>
-    <p>Analytics events and your profile are retained while your account is active. Crash reports are automatically deleted by Firebase after 90 days. PostHog analytics data is retained for 1 year by default. If you delete your account, your data is removed within 30 days.</p>
+    <p>Analytics events and your profile are retained while your account is active. Crash reports are automatically deleted by Firebase after 90 days. PostHog analytics data is retained for 1 year by default. Prove It camera photos are not retained on our servers — only the verification result (valid/invalid plus content label) is stored, linked to your account. If you delete your account, your data is removed within 30 days.</p>
 
     <h2>6. Analytics Consent</h2>
     <p>Analytics and crash reporting are <strong>opt-in</strong>. We ask for your consent during onboarding before collecting any analytics or crash data. You can review our privacy practices at any time by tapping <strong>Privacy Policy</strong> inside the app's Settings screen. To withdraw consent or request data deletion, contact us at <a href="mailto:support@pomodoflow.site">support@pomodoflow.site</a> — we will process your request within 30 days.</p>
